@@ -63,11 +63,11 @@
                     <div class="container">
                         <div class="row mb-3">
                             <div class="col-6">
-                                <label for="usr">First Name:</label>
+                                <label for="usr">First Name</label>
                                 <input type="text" class="form-control" id="usr">
                             </div>
                             <div class="col-6">
-                                    <label for="usr">Last Name:</label>
+                                    <label for="usr">Last Name</label>
                                     <input type="text" class="form-control" id="usr">
                                 </div>
     
@@ -76,29 +76,68 @@
                         <div class="row mb-3">
                             <div class="col-12">
                                 <div class="row mb-3">
-                                    <div class="col-12">
-                                        <label for="inputAddress">Address</label>
+                                    <div class="col-3">
+                                        <label for="inputAddress">Street Address</label>
                                         <input type="text" class="form-control" id="inputAddress"
                                             placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="inputAddress">Apt #</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="#4B">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="inputAddress">City</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="Algiers">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="inputAddress">Zip Code</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="94404">
                                     </div>
 
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-3">
-                                        <div class="form-group">
-                                            <label for="inputCity">Education Level:</label>
-                                            <input type="text" class="form-control" id="inputCity">
-                                        </div>
+                                        <label for="education" class="control-label">Education Level</label>
+                                        <select class="form-control" id="state" name="state">
+                                            <option value="AK">None</option>
+                                            <option value="AL">1st Year Primary</option>
+                                            <option value="AR">2nd Year Primary</option>
+                                            <option value="AZ">3rd Year Primary</option>
+                                            <option value="CA">4th Year Primary</option>
+                                            <option value="CO">1st Year Middle</option>
+                                            <option value="CT">2nd Year Middle</option>
+                                            <option value="DC">3rd Year Middle</option>
+                                            <option value="DC">4th Year Middle</option>
+                                            <option value="DC">1st Year University</option>
+                                            <option value="DC">2nd Year University</option>
+                                            <option value="DC">3rd Year University</option>
+                                            <option value="DC">4th Year University</option>
+                                            <option value="DC">5th Year University</option>
+                                            <option value="DC">6th Year University</option>
+                                            <option value="DC">7+ Years University</option>
+                                        </select>
                                     </div>
                                     <div class="col-3">
-                                            <div class="form-group">
-                                                <label for="inputCity">Last Degree Obtained:</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
+                                        <label for="degree" class="control-label">Last Degree Obtained</label>
+                                        <select class="form-control" id="state" name="state">
+                                            <option value="AK">None</option>
+                                            <option value="AL">6th Year </option>
+                                            <option value="AR">BEM</option>
+                                            <option value="AZ">Baccalauréat</option>
+                                            <option value="CA">Technician</option>
+                                            <option value="CO">Bachelor</option>
+                                            <option value="CT">Engineer</option>
+                                            <option value="DC">Master</option>
+                                            <option value="DC">Doctorate</option>
+                                            <option value="DC">Other</option>
+                                        </select>
                                         </div>
                                     <div class="col-3">
                                             <div class="form-group">
-                                                <label for="inputCity">Institution:</label>
+                                                <label for="inputCity">Institution</label>
                                                 <input type="text" class="form-control" id="inputCity">
                                             </div>
                                         </div>
@@ -109,24 +148,33 @@
 
                                 </div>
                                 <div class="row mb-3">
-                                        <div class="col-3">
+                                        <div class="col-2">
+                                                <label for="degree" class="control-label">Employment</label>
+                                                <select class="form-control" id="state" name="state">
+                                                    <option value="AK">Employed</option>
+                                                    <option value="AL">Unemployed</option>
+                                                    <option value="AR">Retired</option>
+                                                   
+                                                </select>
+                                                </div>
+                                        <div class="col-2">
                                             <div class="form-group">
-                                                <label for="inputCity">Profession:</label>
+                                                <label for="inputCity">Profession</label>
                                                 <input type="text" class="form-control" id="inputCity">
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="col-2">
                                                 <div class="form-group">
-                                                    <label for="inputCity">Industry:</label>
+                                                    <label for="inputCity">Industry</label>
                                                     <input type="text" class="form-control" id="inputCity">
                                                 </div>
                                             </div>
-                                        <div class="col-3">
-                                            <label for="inputZip">Monthly Salary (DA):</label>
+                                        <div class="col-2">
+                                            <label for="inputZip">Monthly Salary (DA)</label>
                                             <input type="text" class="form-control" id="inputZip">
                                         </div>
-                                        <div class="col-3">
-                                                <label for="inputZip">Total Years of Work Experience</label>
+                                        <div class="col-2">
+                                                <label for="inputZip">Years of Experience</label>
                                                 <input type="text" class="form-control" id="inputZip">
                                             </div>
     
@@ -141,11 +189,11 @@
                     </div>
 
 
-                    <nav class="navbar sticky-bottom" style="background-color: #CCF9E7" id="navBottom;" >
+                    <nav class="navbar sticky-bottom mt-5" style="background-color: #CCF9E7" id="navBottom;" >
                         <a class="navbar-brand" href="#" >
-                            <img src="assets/images/ParentMaps.png" width="30" height="30"
+                            <img src="dz.png" width="30" height="30"
                                 class="d-inline-block align-top" id="navLogo">
-                            Hirapp | Made by Wassim Khemici using HTML, CSS, Javascript, and Bootstrap.</a>
+                            Hirapp | Developed using HTML, CSS, Javascript, & Bootstrap.</a>
 
                     </nav>
                 </div>
